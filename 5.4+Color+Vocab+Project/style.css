@@ -1,0 +1,35 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}/* make all the images 200px high and 200px wide
+ */
+img {
+    height: 200px;
+    width: 200px;
+}
+/* Use CSS to change all the color titles to have "font-weight: normal;"
+ */
+ .color-title {
+    font-weight: normal;
+}
+
+/* Style the color title to have a color of the square
+ */
+ #red {
+    color: red;
+}
+
+ #blue {
+    color: blue;
+}
+
+ #orange {
+    color: orange;
+}
+
+ #green {
+    color: green;
+}
+
+ #yellow {
+    color: yellow;
+}
