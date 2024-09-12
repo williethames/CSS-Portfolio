@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects Portfolio</title>
+  <style>
+    /* General Body Styling with Background */
+    body {
+      background: linear-gradient(135deg, #000000, #007acc, #ac17dd);
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Full height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; /* Prevents scrollbars */
+    }
+
+    /* Container for Hero Section */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+      width: 100vw; /* Full width */
+      height: 100vh; /* Full height */
+      padding: 0 20px; /* Optional padding to prevent content from touching the edges */
+      box-sizing: border-box;
+    }
+
+    /* Hero Section Styling */
+    .hero {
+      grid-column: 1 / -1; /* Span all 12 columns */
+      background: linear-gradient(135deg, #000000, #007acc, #ac17dd);
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      max-width: 100%; /* Ensure it doesn't exceed viewport width */
+      max-height: 100%; /* Ensure it doesn't exceed viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box; /* Include padding and border in width/height */
+    }
+
+    /* Profile Picture Styling */
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    /* Contact Info Styling */
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Buttons Styling */
+    .btn {
+      background-color: #560ed1;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #005999;
+    }
+
+    .btn-custom {
+      margin-top: 20px;
+    }
+
+    /* Smooth transition for everything */
+    * {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- Container for Hero Section -->
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="../img/pp.jpg"
+        alt="Profile Photo of Willie Thames"
+        class="profile-photo"
+      />
+      <h2>Willie Thames</h2>
+      <div class="contact-info">
+        <p>
+          Email:
+          <a href="mailto:wthames1234@gmail.com">wthames1234@gmail.com</a>
+        </p>
+        <p>Phone: 916-544-2754</p>
+        <p>Location: Sacramento, CA</p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/willie-thames-jr-261023222/"
+            target="_blank"
+          >LinkedIn</a
+          >
+          |
+          <a href="https://www.github.com/williethames" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </div>
+      <a href="./WILLIETHAMESRESUMEfall2024.docx" download>
+        <button class="btn btn-custom">Download Resume</button>
+      </a>
+      <a href="tel:+9165442754" class="btn btn-custom">Contact Me</a>
+    </section>
+  </div>
+</body>
+</html>
+
+
